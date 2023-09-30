@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="icon" href="Images/note.png">
+    <link rel="stylesheet" href="Style/reset.css">
+    <link rel="stylesheet" href="FontIcons/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="Style/style.css">
+    
+</head>
+<body>
+    <div class = "container">
+        <div class="header">
+        <div class="Welcome">
+        <div class="welcome-text">
+            <img class="notes-img" src="Images/note.png" alt="Notes">
+                This Is A Simple 
+                <br>
+                &nbsp;To Do List App.
+        </div>
+        <a href="#notes-container"><div class="start-button">
+            <div class="start-button-text">
+                Try It
+            </div>
+        </div>
+        </a>
+        </div>
+        </div>
+        </div>
+        <div class="app">
+            <div class="pop-up">
+                <div class ="pop-up-helper">
+                See How It Works
+            
+                <button id="pop-up-button" title="pop-up-button" type="button"><i class="fa-solid fa-question"></i></button>
+            </div>
+                <div class ="pop-up-window">
+                    <div class="pop-up-content">
+                        <div class="close-pop-up">&times;</div>
+                    <p>
+                        The App Works As Follows <br> <br> <br>
+                        - To Add A New Note Press Add Button Or Enter On Your Keyboard Below After Writing The Note.<br> <br>
+                        - When You Finish The Note Click On The Checkmark.<br> <br>
+                        - To Delete A Note Checkmark It And Press Delete.
+                    </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="notes-container">
+                <ul class="to-do">
+
+                </ul>
+                <input type="text" id="new-task" placeholder="Enter A New Task">
+                
+            </div>
+            <div class="notes-buttons">
+                <div class="add-note">
+                    Add
+                </div>
+                <div class="delete-note">
+                    Delete
+                </div>
+            </div>
+            
+        </div>
+       <div class="footer">
+        <div class="footer-content">
+            <div class="footer-icons">
+                <a href="https://twitter.com/notahmedwael" title="x-link" target="_blank" rel="noopener"><i id = "x-icon" class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/notahmedwael" title="github-link" target="_blank" rel="noopener"><i id = "github-icon" class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-wael-9a6389284/" title="linkedin-link" target="_blank" rel="noopener"><i id = "linkedin-icon" class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <hr>
+            &nbsp;&nbsp;&nbsp;&nbsp;Developed By Ahmed Wael
+        </div>
+       </div> 
+    </div>
+    <script src="Script/script.js"></script>
+</body>
+</html>
