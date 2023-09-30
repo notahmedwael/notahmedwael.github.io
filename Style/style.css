@@ -1,0 +1,213 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../Fonts/static/Montserrat-Regular.ttf);
+}
+:root{
+    font-size: 16px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Montserrat", "sans-serif";
+    scroll-behavior: smooth;
+    color: #e3e3e3;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "app app app"
+    "footer footer footer";
+    grid-template-rows: auto 3fr auto;
+}
+.header{
+    background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+    grid-area: header;
+    height: 120vh;
+    line-height: 1.8;
+    word-spacing: 15 px;
+}
+
+.notes-img{
+    width: 4em;
+    padding-left: 2.5em;
+    padding-right: 2em;
+    transition: transform 0.3s ease;
+}
+.notes-img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.welcome-text{
+    margin-top: 2.5em;
+    display: flex;
+    font-size: 4em;
+    color: #38598b;
+    text-shadow: 5px 5px 30px rgba(56, 89, 139, 0.7);
+}
+.header .start-button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #005792;
+    width: 10em;
+    height: 4em;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    cursor: default;
+    color:#f0f8ff;
+}
+.start-button-text{
+    font-size: 2em;
+    color:#f0f8ff;
+    text-shadow: 5px 5px 30px rgba(232, 235, 239, 0.7);
+}
+.app{
+    background: #b7c3d3;
+    grid-area: app;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pop-up-helper{
+    margin-top: 1.5em;
+    font-size: 2em;
+    color: #f0f8ff;
+    text-shadow: 5px 5px 22px rgba(0, 0, 0, 0.5);
+}
+#pop-up-button{
+    background: #352f44;
+    color: #f0f8ff;
+    border-radius: 10px;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+.pop-up-window{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(116, 114, 114, 0.4);
+}
+.close-pop-up{
+    position: absolute;
+    top: 0.2em;
+    right: 0.4em;
+    font-size: 2em;
+    cursor: pointer;
+}
+.close-pop-up:hover{
+    color: #dc2f2f;
+    cursor: pointer;
+}
+.pop-up-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    font-size:x-large;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: normal;
+    color:#352f44
+}
+#notes-container{
+    /* background: linear-gradient(178.1deg, rgb(60, 55, 106) 8.5%, rgb(23, 20, 69) 82.4%); */
+    background: #352f44;
+    width: 75%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 4em;
+    border-radius: 2em;
+    overflow: hidden;
+}
+#new-task{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: 1em;
+    color: #b7c3d3;
+    background: #352f44;
+    border-style: hidden;
+    font-size: x-large;
+}
+#new-task:focus{
+    outline: none;
+}
+.notes-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+}
+li{
+    font-size: x-large;
+    margin: 1em;
+}
+input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    border-radius: 2em;
+    margin-right: 0.5em;
+}
+.add-note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10em;
+    background: #005792;
+    color: #f0f8ff;
+    width: 5em;
+    height: 3em;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.delete-note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #005792;
+    color: #f0f8ff;
+    width: 5em;
+    height: 3em;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.footer{
+    background: #233142;
+    grid-area: footer;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+    cursor: default;
+}
+.footer-icons{
+    font-size: 2.5em;
+}
+#x-icon, #github-icon, #linkedin-icon{
+    margin: 0.5em;
+}
+
+#x-icon:hover, #github-icon:hover, #linkedin-icon:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
