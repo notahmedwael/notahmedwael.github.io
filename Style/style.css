@@ -29,7 +29,7 @@ body{
     word-spacing: 15 px;
 }
 
-.notes-img{
+/* .notes-img{
     max-width: 50%;
     max-height: 400px;
     padding-left: 2.5em;
@@ -51,7 +51,7 @@ body{
     font-size: 4em;
     color: #38598b;
     text-shadow: 5px 5px 30px rgba(56, 89, 139, 0.7);
-}
+} */
 .header .start-button{
     margin-left: auto;
     margin-right: auto;
