@@ -41,7 +41,7 @@ body{
 .header .start-button{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3em;
+    margin-top: 10em;
     display: flex;
     justify-content: center;
     align-items: center;
