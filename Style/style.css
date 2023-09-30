@@ -46,8 +46,7 @@ body{
 }*/
 .welcome-text{
     margin-top: 2.5em;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 4em;
     color: #38598b;
     text-shadow: 5px 5px 30px rgba(56, 89, 139, 0.7);
