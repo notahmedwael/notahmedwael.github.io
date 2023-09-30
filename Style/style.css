@@ -29,21 +29,6 @@ body{
     word-spacing: 15 px;
 }
 
-/* .notes-img{
-    max-width: 50%;
-    max-height: 400px;
-    padding-left: 2.5em;
-    padding-right: 1em;
-    transition: transform 0.3s ease;
-}
-.notes-img img{
-    width: 100%;
-    height: auto;
-}
-.notes-img:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}*/
 .welcome-text{
     margin-top: 2.5em;
     text-align: center;
